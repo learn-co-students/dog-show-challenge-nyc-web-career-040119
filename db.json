@@ -1,105 +1,244 @@
-{"dogs":
-  [
+{
+  "dogs": [
     {
-    "id": 1,
-    "name": "Baby",
-    "breed": "Scottish Deerhound",
-    "sex": "male"
-    }, {
-    "id": 2,
-    "name": "Teddy",
-    "breed": "Rhodesian Ridgeback",
-    "sex": "female"
-    }, {
-    "id": 3,
-    "name": "Snickers",
-    "breed": "Dachshund",
-    "sex": "female"
-    }, {
-    "id": 4,
-    "name": "Harvey",
-    "breed": "Irish Spaniel",
-    "sex": "male"
-    }, {
-    "id": 5,
-    "name": "Gracie",
-    "breed": "Miniature Pinscher",
-    "sex": "female"
-    }, {
-    "id": 6,
-    "name": "Oreo",
-    "breed": "English Springer",
-    "sex": "male"
-    }, {
-    "id": 7,
-    "name": "Diamond",
-    "breed": "Labrador",
-    "sex": "female"
-    }, {
-    "id": 8,
-    "name": "Chloe",
-    "breed": "Dandie Terrier",
-    "sex": "male"
-    }, {
-    "id": 9,
-    "name": "Shelby",
-    "breed": "Kuvasz",
-    "sex": "male"
-    }, {
-    "id": 10,
-    "name": "Patches",
-    "breed": "Dingo",
-    "sex": "male"
-    }, {
-    "id": 11,
-    "name": "Jasper",
-    "breed": "Redbone",
-    "sex": "female"
-    }, {
-    "id": 12,
-    "name": "Misty",
-    "breed": "Patterdale Terrier",
-    "sex": "female"
-    }, {
-    "id": 13,
-    "name": "Lady",
-    "breed": "Mexicanhairless",
-    "sex": "female"
-    }, {
-    "id": 14,
-    "name": "Coco",
-    "breed": "Maltese",
-    "sex": "female"
-    }, {
-    "id": 15,
-    "name": "Pepper",
-    "breed": "Westhighland Terrier",
-    "sex": "female"
-    }, {
-    "id": 16,
-    "name": "Buddy",
-    "breed": "Walker Hound",
-    "sex": "female"
-    }, {
-    "id": 17,
-    "name": "Chance",
-    "breed": "Flatcoated Retriever",
-    "sex": "female"
-    }, {
-    "id": 18,
-    "name": "Chance",
-    "breed": "Toy Terrier",
-    "sex": "male"
-    }, {
-    "id": 19,
-    "name": "Penny",
-    "breed": "Wheaten Terrier",
-    "sex": "male"
-    }, {
-    "id": 20,
-    "name": "Coco",
-    "breed": "Affenpinscher",
-    "sex": "female"
+      "id": 1,
+      "name": "Dogg",
+      "breed": "Poodle",
+      "sex": "male"
+    },
+    {
+      "id": 2,
+      "name": "Teddy",
+      "breed": "Rhodesian Ridgeback",
+      "sex": "female"
+    },
+    {
+      "id": 3,
+      "name": "Snickers",
+      "breed": "Dachshund",
+      "sex": "female"
+    },
+    {
+      "id": 4,
+      "name": "Harvey",
+      "breed": "Irish Spaniel",
+      "sex": "male"
+    },
+    {
+      "id": 5,
+      "name": "Gracie",
+      "breed": "Miniature Pinscher",
+      "sex": "female"
+    },
+    {
+      "id": 6,
+      "name": "yes",
+      "breed": "no",
+      "sex": "yes"
+    },
+    {
+      "id": 7,
+      "name": "Diamond",
+      "breed": "Labrador",
+      "sex": "female"
+    },
+    {
+      "id": 8,
+      "name": "Chloe",
+      "breed": "Dandie Terrier",
+      "sex": "male"
+    },
+    {
+      "id": 9,
+      "name": "Shelby",
+      "breed": "Kuvasz",
+      "sex": "male"
+    },
+    {
+      "id": 10,
+      "name": "Patches",
+      "breed": "Dingo",
+      "sex": "male"
+    },
+    {
+      "id": 11,
+      "name": "Jasper",
+      "breed": "Redbone",
+      "sex": "female"
+    },
+    {
+      "id": 12,
+      "name": "Misty",
+      "breed": "Patterdale Terrier",
+      "sex": "female"
+    },
+    {
+      "id": 13,
+      "name": "Lady",
+      "breed": "Mexicanhairless",
+      "sex": "female"
+    },
+    {
+      "id": 14,
+      "name": "Coco",
+      "breed": "Maltese",
+      "sex": "female"
+    },
+    {
+      "id": 15,
+      "name": "Pepper",
+      "breed": "Westhighland Terrier",
+      "sex": "female"
+    },
+    {
+      "id": 16,
+      "name": "Buddy",
+      "breed": "Walker Hound",
+      "sex": "female"
+    },
+    {
+      "id": 17,
+      "name": "Chance",
+      "breed": "Flatcoated Retriever",
+      "sex": "female"
+    },
+    {
+      "id": 18,
+      "name": "Chance",
+      "breed": "Toy Terrier",
+      "sex": "male"
+    },
+    {
+      "id": 19,
+      "name": "Penny",
+      "breed": "Wheaten Terrier",
+      "sex": "male"
+    },
+    {
+      "id": 20,
+      "name": "Coco",
+      "breed": "Affenpinscher",
+      "sex": "female"
+    },
+    {
+      "name": "babay",
+      "breed": "poodle",
+      "sex": "male",
+      "id": 21
+    },
+    {
+      "name": "yes",
+      "breed": "yes",
+      "sex": "yes",
+      "id": 22
+    },
+    {
+      "name": "yes",
+      "breed": "yes",
+      "sex": "yes",
+      "id": 23
+    },
+    {
+      "name": "no",
+      "breed": "no",
+      "sex": "no",
+      "id": 24
+    },
+    {
+      "name": "Teddy",
+      "breed": "bloop",
+      "sex": "female",
+      "id": 25
+    },
+    {
+      "name": "tip",
+      "breed": "tip",
+      "sex": "dog",
+      "id": 26
+    },
+    {
+      "name": "yes",
+      "breed": "i",
+      "sex": "am",
+      "id": 27
+    },
+    {
+      "name": "Teddy",
+      "breed": "bloop Ridgeback",
+      "sex": "female",
+      "id": 28
+    },
+    {
+      "name": "Teddy",
+      "breed": "Rhodesian Ridgeback",
+      "sex": "female",
+      "id": 29
+    },
+    {
+      "name": "Baby",
+      "breed": "bloop",
+      "sex": "male",
+      "id": 30
+    },
+    {
+      "name": "Shelby",
+      "breed": "Kuvasz",
+      "sex": "male",
+      "id": 31
+    },
+    {
+      "name": "Not",
+      "breed": "The",
+      "sex": "Same",
+      "id": 32
+    },
+    {
+      "name": "Oreo",
+      "breed": "English Springer",
+      "sex": "male",
+      "id": 33
+    },
+    {
+      "name": "Jeff",
+      "breed": "Poodle",
+      "sex": "male",
+      "id": 34
+    },
+    {
+      "name": "Oreo",
+      "breed": "bloop",
+      "sex": "male",
+      "id": 35
+    },
+    {
+      "name": "yaboi",
+      "breed": "a dog",
+      "sex": "mamale",
+      "id": 36
+    },
+    {
+      "name": "hello",
+      "breed": "yes",
+      "sex": "i am",
+      "id": 37
+    },
+    {
+      "name": "bloop",
+      "breed": "bloop",
+      "sex": "bloop",
+      "id": 38
+    },
+    {
+      "name": "b",
+      "breed": "b",
+      "sex": "b",
+      "id": 39
+    },
+    {
+      "name": "hello",
+      "breed": "you",
+      "sex": "are",
+      "id": 40
     }
   ]
 }
