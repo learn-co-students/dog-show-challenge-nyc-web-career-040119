@@ -11,12 +11,12 @@ fetch(dogsUrl, {method: "GET"})
 .then(function(dogsObj){
 
   dogsObj.forEach(function(dog){
-    dogsTable.innerHTML += `<tr id="dog-${dog.id}">
+    dogsTable.innerHTML += `<tr>
                               <td class="name">${dog.name}</td>
                               <td class="breed">${dog.breed}</td>
                               <td class="sex">${dog.sex}</td>
                               <td>
-                                <button id="edit-dog-btn">Edit</button>
+                                <button id="${dog.id}">Edit</button>
                               </td>
                             </tr>
                             `
@@ -53,12 +53,27 @@ fetch(dogsUrl, {method: "GET"})
   dogsTable.addEventListener("click", function(e) {
 
       let clickedDog = e.target
+      let dogId = parseInt(clickedDog.id)
       let dogValues = clickedDog.parentElement.parentElement.children
       let dogName = dogValues[0].innerText
       let dogBreed = dogValues[1].innerText
       let dogSex = dogValues[2].innerText
+      const editForm = document.querySelector('.form-container')
+      editForm.innerHTML = `
+                          <form id='dog-form' class="padding margin border-round border-grey">
+                            <input type="name" name="name" placeholder="name" value="${dogName}">
+                            <input type="breed" name="breed" placeholder="breed" value="${dogBreed}">
+                            <input type="sex" name="sex" placeholder="sex" value="${dogSex}">
+                            <input type="submit"value="Submit">
+                          </form>
+                          `
+      editForm.addEventListener("submit", function(event){
+        let newName = event.target.name
+        let newBreed = event.target.breed
+        let newSex = event.target.sex
 
-      fetch('http://localhost:3000/dogs/1', {
+
+      fetch(`http://localhost:3000/dogs/${dogId}`, {
         method:"PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -66,37 +81,19 @@ fetch(dogsUrl, {method: "GET"})
         },
         body: JSON.stringify(
           {
-            "name": dogName,
-            "breed": dogBreed,
-            "sex": dogSex
+            "name": newName.value,
+            "breed": newBreed.value,
+            "sex": newSex.value
           }
         )
       })
       .then(response => response.json())
       .then(function(editDog){
-        console.log(editDog)
-        const editForm = document.querySelector('.form-container')
-        editForm.innerHTML = `
-                            <form id='dog-form' class="padding margin border-round border-grey">
-                              <input type="name" name="name" placeholder="name" value="${editDog.name}">
-                              <input type="breed" name="breed" placeholder="breed" value="${editDog.breed}">
-                              <input type="sex" name="sex" placeholder="sex" value="${editDog.sex}">
-                              <input type="submit"value="Submit">
-                            </form>
-                            `
-        editForm.addEventListener("submit", function(e){
-          let newDogValues = e.target.children
-          let newName = newDogValues[0]
-          let newBreed = newDogValues[1]
-          let newSex = newDogValues[2]
-
-          console.log("submitted!");
-        })
-        const editDogObj = document.querySelector(`#dog-${editDog.id}`)
-        editDogObj.innerHTML = ``
-
+        // let editedDog = document.querySelector(`#dog-${clickDog.id}`).innerHTML
+        // console.log(editedDog)
       })
   })
+})
 
 
 })//END of DOMContentLoaded

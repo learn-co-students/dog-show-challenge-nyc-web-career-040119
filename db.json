@@ -2,9 +2,9 @@
   "dogs": [
     {
       "id": 1,
-      "name": "Baby",
-      "breed": "Scottish Deerhound",
-      "sex": "male"
+      "name": "Tedd",
+      "breed": "Rhodesian Ridgeback",
+      "sex": "female"
     },
     {
       "id": 2,
