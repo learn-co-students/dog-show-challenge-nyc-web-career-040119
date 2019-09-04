@@ -50,9 +50,9 @@ document.addEventListener('DOMContentLoaded', () => {
               'Content-Type': 'application/json',
               Accept: "application/json" },
               body: JSON.stringify({
-                "name": `${name.value}`,
-                "breed": `${breed.value}`,
-                "sex": `${sex.value}`
+                "name": name.value,
+                "breed": breed.value,
+                "sex": sex.value
               })
             })
             .then(function(res){
